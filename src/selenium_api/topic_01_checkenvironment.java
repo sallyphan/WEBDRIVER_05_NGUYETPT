@@ -14,9 +14,11 @@ public class topic_01_checkenvironment {
 	
   @Test
   public void TC_01_CheckURLAndTitle() {
+	  System.out.print("Check Homepage Title");
 	  String homepageTitle = driver.getTitle();
 	  Assert.assertEquals(homepageTitle, "Guru99 Bank Home Page");
 	  
+	  System.out.print("Check URL");
 	  String homepageUrl = driver.getCurrentUrl();
 	  Assert.assertEquals(homepageUrl, "http://www.demo.guru99.com/v4/");
   }
